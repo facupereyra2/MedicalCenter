@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Roboto:wght@300&display=swap%27');
+
+:root{
+    --principal-bg-color: #00796B;
+    --secundario-bg-color: #a;
+    --fondo-bg-color: #4D4F51;
+    --fondo-secundario-bg-color: rgba(0, 0, 0, 0.566);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.form{
+    background-color: var(--fondo-secundario-bg-color);
+    padding: 30px;
+    margin: auto;
+    width: 70%;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+}
+.form .info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+
+.form .info input{
+    height: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.form .consulta{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form .consulta textarea{
+    height: 80px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.form .consulta button{
+    background-color: var(--principal-bg-color);
+    color: #ffff;
+    width: 100px;
+    height: 40px;
+    margin:auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border: 0;
+}
+
+.form button:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    opacity: 0.96;
+    cursor: pointer;
+}
+
+@media (max-width:640px) {
+    .form .info{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
